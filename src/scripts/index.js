@@ -1,4 +1,19 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
+import '../styles/responsive.css';
+import './components/outlet-item.js';
+import App from './views/app';
 
-console.log('Hello Coders! :)');
+const app = new App({
+    button: document.querySelector('#menu'),
+    drawer: document.querySelector('#drawer'),
+    content: document.querySelector('#maincontent'),
+});
+
+window.addEventListener('hashchange', () => {
+    app.renderPage();
+  });
+   
+  window.addEventListener('load', () => {
+    app.renderPage();
+  });

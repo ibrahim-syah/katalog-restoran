@@ -1,16 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Restaurant Apps Starter Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <title>H. Weskar's | Homepage</title>
 </head>
 <body>
-<h1>Restaurant Apps Starter Project</h1>
-<p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-<p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-<img src="./images/heros/hero-image_1.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_2.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_3.jpg" width="450" alt="">
-<img src="./images/heros/hero-image_4.jpg" width="450" alt="">
+<a href="#maincontent" class="skip-link">Skip to content</a>
+<div class="app-bar">
+<header class="header">
+    <div class="header__inner">
+        <h1 class="header__title" tabindex=0>
+            H. Weskar's
+        </h1>
+    </div>
+    <button id="menu" class="header__menu" tabindex="0">☰</button>
+</header>
+
+<nav id="drawer" class="nav">
+    <ul class="nav__list">
+        <li class="nav__item"><a href="#/landing-page">Home</a></li>
+        <li class="nav__item"><a href="#/like">Favorite</a></li>
+        <li class="nav__item"><a href="https://github.com/ibrahim-syah">About Us</a></li>
+    </ul>
+</nav>
+</div>
+
+<div class="hero" alt="hero_banner">
+    <div class="hero__inner">
+        <h2 class="hero__title" tabindex=0>Experience Pecel Lele Like You've Never Been Before</h2>
+        <p class="hero__tagline" tabindex=0>H. Weskar's presents one of the best pecel lele in South East Asia</p>
+    </div>
+</div>
+<main id="maincontent">
+    <section class="content">
+        <div class="latest">
+            <h2 class="latest__label" tabindex=0>Find Us!</h2>
+            <outlet-item></outlet-item>
+        </div>
+    </section>
+</main>
+<footer>
+    <p tabindex=0>Copyright © 2020 - H. Weskar's</p>
+</footer>
 </body>
 </html>
