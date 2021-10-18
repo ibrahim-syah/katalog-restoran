@@ -10,7 +10,7 @@ const LandingPage = {
             <p class="hero__tagline" tabindex=0>H. Weskar's presents one of the best pecel lele in South East Asia</p>
         </div>
       </div>
-      <section class="content">
+      <section class="content" id="jump">
             <div class="latest">
                 <h2 class="latest__label" tabindex=0>Find Us!</h2>
             </div>
