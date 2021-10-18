@@ -47,6 +47,16 @@ outlet-item {
     .header__menu {
         display: none;
     }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+      }
+
+    .menu > ul {
+        padding-left: 4em;
+    }
 }
 
 
@@ -76,7 +86,7 @@ outlet-item {
 }
 
 @media screen and (min-width: 1200px) {
-    main {
+    .latest {
         max-width: 1200px;
     }
 
@@ -85,3 +95,21 @@ outlet-item {
         object-fit: cover;
     }
 }
+
+@media screen and (min-width: 650px) {
+    
+   
+    .outlet {
+        grid-template-columns: auto 1fr;
+    }
+   
+    .outlet .outlet__title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+   
+    .outlet .outlet__overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+  }
