@@ -30,16 +30,16 @@ const createOutletDetailTemplate = (outlet) => `
   </div>
 `;
 
-const createLikeButtonTemplate = () => `
+const createLikeOutletButtonTemplate = () => `
   <button aria-label="like this outlet" id="likeButton" class="like">
      <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
-const createLikedButtonTemplate = () => `
+const createUnlikeOutletButtonTemplate = () => `
   <button aria-label="unlike this outlet" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
 
-export { createOutletDetailTemplate, createLikeButtonTemplate, createLikedButtonTemplate };
+export { createOutletDetailTemplate, createLikeOutletButtonTemplate, createUnlikeOutletButtonTemplate };

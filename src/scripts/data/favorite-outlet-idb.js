@@ -11,12 +11,20 @@ const dbPromise = openDB(DATABASE_NAME, DATABASE_VERSION, {
 
 const FavoriteOutletIdb = {
   async getOutlet(id) {
+    if (!id) {
+      return;
+    }
+
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
   async getAllOutlets() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
   async putOutlet(outlet) {
+    if (!outlet.hasOwnProperty('id')) {
+      return;
+    }
+
     return (await dbPromise).put(OBJECT_STORE_NAME, outlet);
   },
   async deleteOutlet(id) {
