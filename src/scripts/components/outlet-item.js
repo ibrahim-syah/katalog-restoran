@@ -4,7 +4,7 @@ import CONFIG from '../globals/config';
 class OutletItem extends HTMLElement {
   constructor() {
     super();
-    this.shadowDOM = this.attachShadow({ mode: 'open' });
+    // this.shadowDOM = this.attachShadow({ mode: 'open' });
   }
 
   set outlets(outlets) {
@@ -13,14 +13,14 @@ class OutletItem extends HTMLElement {
   }
 
   render() {
-    this.shadowDOM.innerHTML = `
+    this.innerHTML = `
         <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        :host {
+        outlet-item {
             text-align: left;
         }
         
@@ -96,9 +96,10 @@ class OutletItem extends HTMLElement {
         </style>
         `;
 
+    let index = 0;
     this._outlets.forEach((element) => {
-      this.shadowDOM.innerHTML += `
-               <article class="post-item">
+      this.innerHTML += `
+               <article class="post-item num${index}">
                     <div class="post-city-banner">
                     <span class="post-item__city" tabindex=0>${element.city}</span>
                     </div>
@@ -110,6 +111,7 @@ class OutletItem extends HTMLElement {
                     </div>
                 </article>
                `;
+      index = index + 1;
     });
   }
 }
