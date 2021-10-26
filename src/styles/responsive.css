@@ -76,6 +76,13 @@ outlet-item {
     }
 }
 
+@media screen and (min-width: 800px) {
+
+    .hero {
+        background-image: url("../public/images/heros-sharp/hero-image_3-large.jpg");
+    }
+}
+
 @media screen and (min-width: 900px) {
 
     outlet-item {

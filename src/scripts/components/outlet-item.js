@@ -103,7 +103,7 @@ class OutletItem extends HTMLElement {
                     <div class="post-city-banner">
                     <span class="post-item__city" tabindex=0>${element.city}</span>
                     </div>
-                    <img class="post-item__thumbnail"
+                    <img class="post-item__thumbnail lazyload"
                          src="${CONFIG.BASE_IMAGE_URL}medium/${element.pictureId}" alt="Picture of ${element.name}" tabindex=0>
                     <div class="post-item__content">
                         <a href="#/detail/${element.id}" class="post-item__title" tabindex=0>${element.name}</a>

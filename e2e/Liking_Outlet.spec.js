@@ -13,7 +13,8 @@ Scenario('liking one outlet', async (I) => {
 
   I.amOnPage('/');
 
-  I.seeElement('.num0 .post-item__content .post-item__title');
+  // sometimes, when codecept found the element before the image loaded, it will try to click, and then the image loaded, causing the content to shift
+  I.seeElement('.num0 .lazyloaded');
 
   const firstOutletTitle = await I.grabTextFrom('.num0 .post-item__content .post-item__title');
   I.click('.num0 .post-item__content .post-item__title');
