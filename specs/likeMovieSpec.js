@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import FavoriteOutletIdb from '../src/scripts/data/favorite-outlet-idb';
 import * as TestFactories from './helpers/testFactories';
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 /* eslint-disable no-underscore-dangle */
 import CONFIG from '../globals/config';
 
@@ -111,7 +112,7 @@ class OutletItem extends HTMLElement {
                     </div>
                 </article>
                `;
-      index = index + 1;
+      index += 1;
     });
   }
 }

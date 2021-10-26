@@ -42,4 +42,8 @@ const createUnlikeOutletButtonTemplate = () => `
   </button>
 `;
 
-export { createOutletDetailTemplate, createLikeOutletButtonTemplate, createUnlikeOutletButtonTemplate };
+export {
+  createOutletDetailTemplate,
+  createLikeOutletButtonTemplate,
+  createUnlikeOutletButtonTemplate,
+};
